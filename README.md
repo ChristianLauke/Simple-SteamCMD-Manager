@@ -20,7 +20,7 @@ Dieses Bash-Skript bietet eine robuste und sichere Lösung zur Automatisierung d
 | `-v`, `--validate` | Aktiviert die Validierung der Spieldateien in SteamCMD. |
 | `-g`, `--game [KEYS]` | Aktualisiert spezifische Spiele (kommagetrennt). |
 | `-l`, `--use-login` | Verwendet das im Skript konfigurierte Steam-Konto. |
-| `-b`, `--backup` | Erstellt vorab eine Datensicherung (`.tgz`) des Serverpfads. |
+| `-b`, `--backup` | Erstellt vorab eine Datensicherung (`.tgz`, `rsync`) des Serverpfads. |
 | `-r`, `--restore` | Stellt den Server aus einem Backup wieder her. |
 | `-p`, `--purge` | Löscht das Serververzeichnis (interaktive Sicherheitsabfrage). |
 | `-d`, `--debug` | Aktiviert den detaillierten Shell-Debug-Modus (xtrace). |
