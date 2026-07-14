@@ -22,7 +22,7 @@ readonly BACKUP_VERBOSE='N' # Backupausgabe anzeigen [y/N]
 readonly INSTALL_DEFAULT_DIR='/opt/steam/server' # Serverpfad
 readonly INSTALL_DEFAULT_PLATFORM='linux' # Server Plattform, wenn Angabe fehlt [linux/windows]
 readonly INSTALL_DEFAULT_LOGIN='anonymous' # Steam Login
-readonly INSTALL_STEAM_ACCOUNT='' # Steam Login bei Option --use-login (wird ggf. bei --use-login erfragt)
+readonly INSTALL_STEAM_ACCOUNT='' # Steam Login bei Option --use-login
 
 # Definition der standardisierten Return-Codes als Konstanten
 readonly RC_SUCCESS=0
