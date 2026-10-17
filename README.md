@@ -40,25 +40,25 @@ Wird das Skript ohne `-g` / `--game` aufgerufen, aktualisiert es automatisch all
 ./steamcmd_server_updateall_v26.sh
 
 # Gezieltes Update mit Datei-Validierung für Palworld und Valheim
-./steamcmd_server_updateall_v26.sh -g palworld,valheim -v
+./steamcmd_server_updateall_v26.sh --game 'palworld,valheim' --validate
 
 # Reines Backup für einen bestimmten Server erstellen
-./steamcmd_server_updateall_v26.sh -g 7dtd -b
+./steamcmd_server_updateall_v26.sh --game '7dtd' --backup
 
 # Backup erstellen und anschließend das Serververzeichnis sauber löschen
-./steamcmd_server_updateall_v26.sh -g cs -b -p
+./steamcmd_server_updateall_v26.sh --game 'cs' --backup --purge
 
 # Server aus dem Backup wiederherstellen
-./steamcmd_server_updateall_v26.sh -g cs -r
+./steamcmd_server_updateall_v26.sh --game 'cs' --restore
 ```
 
 ## Unterstützte Spiele
 
 ### Spiele im automatischen Update (`ACTIVE`)
-`7dtd`, `conan`, `enshrouded`, `palworld`, `valheim`, `vrising`
+-
 
 ### Weitere unterstützte Spiele (`BACKUP` – Abruf über `-g KEY`)
-`ark`, `ark_ascended`, `cs`, `css`, `dayz`, `gmod`, `kf2`, `l4d2`, `mesa`, `perfect_heist2`, `quake`, `rust`, `sotf`, `soulmask`, `windrose`
+`7dtd`, `ark`, `ark_ascended`, `conan`, `cs`, `css`, `dayz`, `enshrouded`, `gmod`, `kf2`, `l4d2`, `mesa`, `palworld`, `perfect_heist2`, `quake`, `rust`, `sotf`, `soulmask`, `valheim`, `vrising`, `windrose`
 
 ## Return-Codes (Exit-Status)
 
