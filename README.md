@@ -25,7 +25,7 @@ Wird das Skript ohne `-g` / `--game` aufgerufen, aktualisiert es automatisch all
 | Option | Beschreibung |
 | :--- | :--- |
 | `-v`, `--validate` | Aktiviert die Validierung der Serverdateien in SteamCMD. |
-| `-g`, `--game [KEYS]` | Verarbeitet spezifische Spiele, kommagetrennt (z. B. `cs,css,palworld`). |
+| `-g`, `--game [KEYS]` | Aktualisiert spezifische Spiele, kommagetrennt (z. B. `cs,css,palworld`). |
 | `-l`, `--use-login` | Verwendet anstelle von `anonymous` das im Skript hinterlegte Steam-Konto. |
 | `-b`, `--backup` | Erstellt vorab eine Datensicherung (`rsync` oder `.tgz`) des Serverpfads. |
 | `-r`, `--restore` | Stellt einen Server aus der Datensicherung wieder her (interaktive Abfrage). |
