@@ -530,9 +530,8 @@ if [ -n "${TARGET_GAMES_LIST}" ]; then
     
     for game_key in "${target_games_array[@]}"; do
         if [ -n "${SUPPORTED_GAME_LIST[$game_key]+Anker}" ]; then
-            # Spielunterstützung prüfen, bei unsupporteten Spiele hart abbrechen
+            # Spielunterstützung prüfen, bei unsupporteten Spielen hart abbrechen
             update_game "${game_key}" "${SUPPORTED_GAME_LIST[$game_key]}" || exit ${?}
-            fi
         else
             echo -e "${COLOR_ERROR}Fehler: Spiel '${game_key}' existiert nicht in der Konfiguration.${COLOR_RESET}" >&2
             exit ${RC_GAME_NOT_FOUND}
